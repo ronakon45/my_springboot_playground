@@ -1,5 +1,7 @@
 package com.ronakon45.playground;
 
+import java.util.function.Supplier;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -21,6 +23,8 @@ public class Customer {
 		this.lastName = lastName;
 	}
 
+	
+
 	@Override
 	public String toString() {
 		return String.format(
@@ -38,5 +42,17 @@ public class Customer {
 
 	public String getLastName() {
 		return lastName;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
+
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
+
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
 	}
 }

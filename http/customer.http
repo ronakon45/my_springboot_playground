@@ -1,9 +1,9 @@
 ### Find All customer
-GET http://localhost:8080/api/customer/
+GET http://localhost:8080/customers
 Accept: application/json
 
 ### ADD NEW CUSTOMER
-POST http://localhost:8080/api/customer/
+POST http://localhost:8080/customers
 Content-Type: application/json
 
 {
@@ -11,3 +11,19 @@ Content-Type: application/json
     "lastName" : "Watt"
 }
 
+### FIND SINGLE DATA
+GET http://localhost:8080/customers/12
+Content-Type: application/json
+
+### UPDATE CUSTOMER DATA
+PUT http://localhost:8080/customers/1
+Content-Type: application/json
+
+{
+    "firstName" : "John",
+    "lastName" : "Watt"
+}
+
+### DELETE CUSTOMER DATA
+DELETE http://localhost:8080/customers/1
+Content-Type: application/json
