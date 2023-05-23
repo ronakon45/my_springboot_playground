@@ -7,7 +7,7 @@ POST http://localhost:8080/customers
 Content-Type: application/json
 
 {
-    "firstName" : "Ronakon",
+    "firstName" : "Ronakon45",
     "lastName" : "Watt"
 }
 
@@ -21,7 +21,7 @@ Content-Type: application/json
 
 {
     "firstName" : "John",
-    "lastName" : "Watt"
+    "lastName" : "Wattaa"
 }
 
 ### DELETE CUSTOMER DATA
