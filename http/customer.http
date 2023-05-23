@@ -1,2 +1,13 @@
 ### Find All customer
 GET http://localhost:8080/api/customer/
+Accept: application/json
+
+### ADD NEW CUSTOMER
+POST http://localhost:8080/api/customer/
+Content-Type: application/json
+
+{
+    "firstName" : "Ronakon",
+    "lastName" : "Watt"
+}
+
